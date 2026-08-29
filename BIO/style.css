@@ -2,17 +2,17 @@
    TOKENS
    ===================================================== */
 :root {
-  --navy: #071a3d;
-  --royal: #123a8c;
-  --blue: #4da3ff;
-  --blue-soft: #8cc2ff;
-  --white: #ffffff;
-  --ink: #eaf1ff;
-  --ink-dim: #b7c7e6;
+  --navy: #1F2A44;
+  --royal: #E8DCC8;
+  --blue: #C6A75E;
+  --blue-soft: #061e39;
+  --white: #151633;
+  --ink: #003aad;
+  --ink-dim: #001d56;
 
-  --glass-bg: rgba(255, 255, 255, 0.07);
-  --glass-bg-hover: rgba(255, 255, 255, 0.12);
-  --glass-border: rgba(255, 255, 255, 0.16);
+  --glass-bg: rgba(0, 0, 0, 0.07);
+  --glass-bg-hover: rgba(36, 0, 240, 0.12);
+  --glass-border: rgba(255, 232, 232, 0.16);
 
   --radius-lg: 22px;
   --radius-full: 999px;
@@ -400,7 +400,7 @@ button:focus-visible {
   white-space: nowrap;
   padding: 4px 8px;
   border-radius: 8px;
-  background: rgba(7, 26, 61, 0.9);
+  background: rgba(255, 255, 255, 0.9);
   border: 1px solid var(--glass-border);
   opacity: 0;
   pointer-events: none;
