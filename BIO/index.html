@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Nama Anda — Bio Link</title>
+  <meta name="description" content="Semua tautan penting saya dalam satu halaman." />
+
+  <!-- Favicon (opsional, ganti sesuai kebutuhan) -->
+  <link rel="icon" href="data:," />
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Lapisan dekoratif: cahaya abstrak (glow) di belakang konten -->
+  <div class="bg-glow bg-glow--one" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--two" aria-hidden="true"></div>
+  <div class="bg-noise" aria-hidden="true"></div>
+
+  <main class="page">
+    <div class="card" id="card">
+
+      <!-- ================= PROFIL ================= -->
+      <!-- Ganti src foto di bawah dengan foto Anda, letakkan file di folder assets/ -->
+      <div class="avatar-wrap">
+        <img
+          class="avatar"
+          src="assets/profile.jpg"
+          alt="Foto profil"
+          onerror="this.src='assets/profile-placeholder.svg'"
+        />
+      </div>
+
+      <h1 class="name">Nama Anda</h1>
+      <p class="bio">Tulis deskripsi singkat tentang dirimu di sini</p>
+
+      <!-- ================= TAUTAN UTAMA ================= -->
+      <!-- Untuk menambah tombol baru, salin satu blok <a class="link-btn">...</a> lalu ubah isinya -->
+      <nav class="links" aria-label="Tautan utama">
+
+        <a class="link-btn link-btn--featured" href="https://cermatrix.example.com" target="_blank" rel="noopener">
+          <span class="link-btn__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="6" width="20" height="12" rx="4" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M7 10v4M5 12h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              <circle cx="16" cy="10.5" r="1" fill="currentColor"/>
+              <circle cx="18.3" cy="12.8" r="1" fill="currentColor"/>
+            </svg>
+          </span>
+          <span class="link-btn__text">CERMATRIX</span>
+          <span class="link-btn__badge">Main</span>
+        </a>
+
+        <!-- Contoh tombol tambahan — hapus jika tidak dipakai, atau salin untuk menambah lagi -->
+        <!--
+        <a class="link-btn" href="#" target="_blank" rel="noopener">
+          <span class="link-btn__icon" aria-hidden="true">…svg…</span>
+          <span class="link-btn__text">Nama Tautan</span>
+        </a>
+        -->
+
+      </nav>
+
+      <!-- ================= SOSIAL MEDIA ================= -->
+      <div class="socials" aria-label="Media sosial">
+        <a class="social-icon" href="https://instagram.com/username" target="_blank" rel="noopener" aria-label="Instagram" data-tip="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"/>
+            <circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.6"/>
+            <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/>
+          </svg>
+        </a>
+
+        <a class="social-icon" href="https://tiktok.com/@username" target="_blank" rel="noopener" aria-label="TikTok" data-tip="TikTok">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 3v10.6a3.4 3.4 0 1 1-2.4-3.25" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14 3c.5 2.4 2.2 4 4.6 4.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+
+        <a class="social-icon" href="https://youtube.com/@username" target="_blank" rel="noopener" aria-label="YouTube" data-tip="YouTube">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2.5" y="6" width="19" height="12" rx="4" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M10.5 9.5l4.5 2.5-4.5 2.5v-5z" fill="currentColor"/>
+          </svg>
+        </a>
+
+        <a class="social-icon" href="https://facebook.com/username" target="_blank" rel="noopener" aria-label="Facebook" data-tip="Facebook">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="9.2" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M13.6 21v-6.6h2.2l.3-2.6h-2.5V10c0-.75.2-1.26 1.28-1.26h1.37V6.4c-.24-.03-1.05-.1-2-.1-1.98 0-3.33 1.2-3.33 3.42v1.9H8.6v2.6h2.35V21" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+
+      <footer class="footer-note">
+        <span id="year"></span> · Dibuat dengan ♥
+      </footer>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
